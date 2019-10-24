@@ -89,7 +89,7 @@ async def serve_chat(ctx, ws):
     while True:
         try:
             buf = await ws.recv()
-            await ctx.boardcast(ws, buf[1:])
+            await ctx.boardcast(ws, buf)
         except websockets.exceptions.ConnectionClosedOK:
             break
         except websockets.exceptions.ConnectionClosedError:
