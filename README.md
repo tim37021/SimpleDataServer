@@ -22,6 +22,12 @@ We can create nodes in different communication types.
 
 
 ## Usage
+```bash
+    pip install websockets
+    python SimpleDataServer.py
+```
+
+## Usage(Client)
 First 
 ```bash
     pip install websocket-client
